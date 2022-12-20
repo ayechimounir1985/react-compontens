@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import ProfilePhotos from './Components/ProfilePhotos'
+import Adresse from './Components/Adresse'
+import Fullname from './Components/Fullname';
+import './App.css'
 function App() {
   return (
+    <form style={{width:'500px',color:'blue'}}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <ProfilePhotos/>
+   <Fullname/>
+   <Adresse/>
     </div>
+    </form>
   );
 }
 
