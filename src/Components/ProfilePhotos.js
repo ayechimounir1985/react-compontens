@@ -1,9 +1,8 @@
-import aaaa from './Image.jpg'
 
-const ProfilePhotos = ()=>{
+function ProfilePhotos ({children}){
     return (
         <div>
-           <img src={aaaa} alt="img" width='400px'/>
+           {children}
         </div>
 
     )

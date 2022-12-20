@@ -1,11 +1,15 @@
+import propTypes from 'prop-types'
 
-function Adresse (){
+
+function Adresse ({Adress}){
+
     return(
         <div>
-            <h2>
-                adresse: Cite Eskan Benarous Tunis
-            </h2>
+            <h2>adresse : {Adress}</h2>
         </div>
     )
+}
+Adresse.propTypes={
+    Adress: propTypes.string
 }
 export default Adresse;
